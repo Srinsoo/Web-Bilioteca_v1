@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Solicitud de Libro</title>
+</head>
+
+<body>
+  <div id="cover">
+    <div class="form-container">
+      <h1>Formulario de solicitud de libro</h1>
+      <form action="/solicitud" method="POST">
+        <!-- Usuario -->
+        <input class="input" type="text" name="id" placeholder="ID">
+        <input class="input" type="text" name="nombre" placeholder="Nombre">
+        <input class="input" type="text" name="apellido" placeholder="Apellido">
+  
+        <!-- Libro -->
+        <input class="input" type="text" name="titulo" placeholder="Título del libro">
+        <input class="input" type="text" name="autor" placeholder="Autor del libro">
+        <input class="input" type="text" name="editorial" placeholder="Editorial">
+        <input class="input" type="number" name="anio" placeholder="Año">
+  
+        <button id="submitbutton" type="submit">Enviar Solicitud</button>
+      </form>
+      
+    </div>
+    <div class="form-container" id="imagecontainer">
+      <img id="bibliotecario" src="images/chica-saludando-a-la-gente-12897633-10469283.webp" alt="">
+      <h1>Bienvenido!</h1>
+      <p>Biblioteca virtual de la universidad de la costa</p>
+    </div>
+  </div>
+
+  <h1 id="developers">Developed by Orinson Coba & Juan Natera</h1>
+</body>
+</html>

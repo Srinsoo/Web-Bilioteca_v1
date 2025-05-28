@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1{
+    font-size: 20px;
+    color: rgb(71, 72, 77);
+    margin-bottom: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(223, 100, 96);
+    align-content: center;
+    position: relative;
+}
+
+#cover{
+    display: flex;
+    background-color: rgb(153, 47, 40);
+    padding: 17px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37);
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 400px;
+    min-height: 670px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 49px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37);
+    background-image: url('images/9cc94c26228c220be469d5aa089b0770.jpg');
+    background-size: cover;       /* ajusta la imagen al tamaño del div */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input{
+    height: 30px;
+    margin: 15px;
+    border: rgb(175, 174, 174) 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#submitbutton{
+    padding: 8px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    transition: background-color 0.3s ease;
+}
+
+#submitbutton:hover{
+    background-color: #c9302c;
+}
+
+#bibliotecario{
+    align-self: center;
+    justify-self: center;
+    width: 250px;
+    align-self: center;
+}
+
+#imagecontainer{
+    justify-content: space-evenly;
+    padding: 90px 0;
+}
+
+#developers{
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    #imagecontainer{
+        display: none;
+    }
+    
+}
